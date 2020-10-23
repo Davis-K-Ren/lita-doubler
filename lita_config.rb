@@ -37,5 +37,5 @@ if ENV['RACK_ENV']=='production'
 else
 	config.robot.adapter = :shell
 end
-
-
+config.adapters.slack.token=ENV.fetch('SLACK_TOKEN','')
+end
